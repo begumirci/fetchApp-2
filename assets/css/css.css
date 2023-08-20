@@ -1,0 +1,154 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul{
+    list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+.actor-email{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+dialog {
+    padding:17px;
+}
+
+.todo-form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.todo-title{
+    text-align: center;
+    margin-bottom:20px;
+    color:cadetblue;
+    font-size: calc(3vw + 24px);
+}
+
+.todo-input{
+    padding-left:10px;
+    border-radius: 12px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+
+.todo-form{
+  color:pink;
+  font-weight: bold;
+}
+
+input{
+  border-color:cadetblue;
+  border-style: solid;
+}
+select{
+  border-color:cadetblue;
+  border-style: solid;
+  border-radius: 10px;
+  color:cadetblue;
+}
+
+.add-todo {
+  color:lightcoral;
+  background-color: pink;
+  border-color:transparent;
+  border-radius: 10px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.add-todo:hover {
+  color:pink;
+  background-color: cadetblue;
+}
+
+input::placeholder{
+  color:lightcoral;
+}
+
+.todo-name {
+  margin-right: 5px;
+}
+
+.todo-item{
+  margin-bottom:10px;
+  color:lightcoral;
+  font-weight: bold;
+}
+
+.del {
+  margin-right: 5px;
+  background-color:cadetblue;
+  border-color:transparent;
+  color:lightcyan;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left:2px;
+  padding-right: 2px;
+}
+
+.showMore {
+  border-radius: 5px;
+  background-color:lightcoral;
+  border-color:transparent;
+  color:pink;
+  cursor: pointer;
+  padding:2px
+}
+
+.actor-username, .actor-name, .actor-email{
+  color:pink;
+  margin-bottom:2px;
+}
+
+.assignee-username, .assignee-name, .assignee-email{
+  color:lightcoral;
+  margin-top:2px;
+}
+
+.close{
+  background-color: pink;
+  border-radius: 5px;
+  border-color:transparent;
+  color:lightcoral;
+  font-weight: bolder;
+  margin-top:10px;
+}
+
+dialog{
+  border-color:pink;
+}
+
+dialog::backdrop{
+  background-color:rgba(0,0,0,0.5);
+}

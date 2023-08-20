@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <script src="assets/js/main.js" defer></script>
+    <title>Fetch</title>
+</head>
+
+<body>
+
+    <dialog>
+        <div class="users">
+            <div class="users-information">
+                <h4 class="actor-username"> Actor's Username:</h4>
+                <h4 class="actor-name">Actor's Name:</h4>
+                <h4 class="actor-email">Actor's E-mail:</h4>
+            
+                <h4 class="assignee-username">Assignee's Username:</h4>
+                <h4 class="assignee-name">Assignee's Name:</h4>
+                <h4 class="assignee-email">Assignee's E-mail:</h4>
+                <button type="reset" class="close">Close</button>
+            </div>
+        </div>
+    </dialog>
+    <h1 class="todo-title">todos</h1>
+    <div class="container">
+        <form class="todo-form">
+            <span>Title: <input type="text" placeholder="enter to do" class="todo-input"></span>
+            <span>Completed: <label><input type="checkbox"></label></span>
+            <span>Actor: </span>
+            <select name="actor" id="actor-id">
+                <option value=""></option>
+            </select>
+            <span>Assignee: </span>
+            <select name="assignee" id="assigne-id">
+                <option value=""></option>
+            </select>
+            <button class="add-todo">Add</button>
+        </form>
+        <ul class="todo-list">
+            <!-- <li class="todo-item">
+            <label>
+                <input class='toggle' type="checkbox">
+                <span class="todo-name"></span>
+                <button class="del">X</button>
+                <button class="showMore">more</button>
+            </label>
+        </li> -->
+        </ul>
+    </div>
+</body>
+
+</html>
